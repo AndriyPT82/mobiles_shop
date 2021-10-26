@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mobiles_shop/static/css/main.c769e90e.chunk.css",
-    "main.js": "/mobiles_shop/static/js/main.b6a1e48f.chunk.js",
-    "main.js.map": "/mobiles_shop/static/js/main.b6a1e48f.chunk.js.map",
+    "main.js": "/mobiles_shop/static/js/main.f17ec498.chunk.js",
+    "main.js.map": "/mobiles_shop/static/js/main.f17ec498.chunk.js.map",
     "runtime-main.js": "/mobiles_shop/static/js/runtime-main.40e56847.js",
     "runtime-main.js.map": "/mobiles_shop/static/js/runtime-main.40e56847.js.map",
     "static/js/2.8a46ee45.chunk.js": "/mobiles_shop/static/js/2.8a46ee45.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.40e56847.js",
     "static/js/2.8a46ee45.chunk.js",
     "static/css/main.c769e90e.chunk.css",
-    "static/js/main.b6a1e48f.chunk.js"
+    "static/js/main.f17ec498.chunk.js"
   ]
 }
