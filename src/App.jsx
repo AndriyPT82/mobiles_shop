@@ -51,16 +51,21 @@ function App() {
     if (!localStorage.mobiles) {
       getData().then(data => {
         const mobiles = JSON.stringify(data)
+        const cart = JSON.stringify([])
         localStorage.setItem('mobiles', mobiles)
-        localStorage.setItem('cart', [])
+        localStorage.setItem('cart', cart)
         setMobiles(data)
+        // setCart([])
+
       })
     }
 
+    const mobiles = localStorage.getItem('mobiles')
+    const cart = localStorage.getItem('cart')
 
-    const parsedMobiles= JSON.parse(localStorage.getItem('mobiles'))
+    const parsedMobiles = JSON.parse(mobiles)
+    const parsedCart = JSON.parse(cart)
 
-    const parsedCart = JSON.parse(localStorage.getItem('cart'))
     setMobiles(parsedMobiles)
     setCart(parsedCart)
   }, [])
