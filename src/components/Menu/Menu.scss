@@ -1,0 +1,29 @@
+.menu {
+  position: fixed;
+  background-color: rgba(154, 154, 154, 0.762);
+  width: max-content;
+  background-color: rgba(179, 179, 179, 0);
+  transform: translateX(-100%);
+  transition: 0.5s;
+  background-color: green;
+
+  &__content {
+    height: 100vh;
+    width: 500px;
+    background-color: rgb(255, 171, 171);
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  // &:target {
+  //   transform: translateX(0%);
+  // }
+
+  &__active {
+    transform: translateX(0%);
+  }
+}

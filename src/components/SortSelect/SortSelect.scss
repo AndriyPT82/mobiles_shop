@@ -1,0 +1,17 @@
+.sort-select {
+  display: flex;
+  height: 30px;
+  align-items: flex-end;
+
+  & select {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-right: 10px;
+  }
+
+  &__tabs {
+    width: 100px;
+    height: 20px;
+  }
+}

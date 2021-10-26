@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-size: 30px;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__menu {
+
+  }
+
+  &__search {
+
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__orders {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__call {
+
+    &::before {
+      position: absolute;
+      display: block;
+      transform: translate(-100%, -50%);
+      padding-right: 5px;
+      top: 50%;
+      content: "+351910342177";
+      font-size: 13px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover::before{
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+
+  &__basket {
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  &__selection {
+    border: 1px solid rgb(255, 255, 255);
+    height: 50px;
+  }
+}

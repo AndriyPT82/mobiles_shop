@@ -1,0 +1,46 @@
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 0 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  & * {
+    color: black
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 auto; 
+    top: 50%;
+    transform: translateY(-50%);
+    height: 600px;
+    max-width: 1000px;
+  }
+
+  &__closer {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .popup {
+    padding: 20px 20px;
+    overflow: scroll;
+  
+    &__content {
+      top: 0;
+      transform: translateY(0%);
+    }
+  
+    &__closer {
+      right: 10px;
+      top: 0;
+      font-size: 20px;
+    }
+  }
+}

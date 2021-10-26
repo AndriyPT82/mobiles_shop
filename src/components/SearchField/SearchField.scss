@@ -1,0 +1,40 @@
+
+.search-field {
+  position: absolute;
+  display: flex;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  transform: translateY(-100%);
+  transition: 0.5s;
+
+  &--active {
+    transform: translateY(0);
+  }
+
+  &__input {
+    flex-grow: 1;
+    outline: none;
+    color: white;
+    background: none;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid rgb(82, 82, 82);
+  }
+
+  &__close {
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(117, 117, 117);
+
+    &:hover {
+      color : rgb(233, 233, 233)
+    }
+  }
+}
