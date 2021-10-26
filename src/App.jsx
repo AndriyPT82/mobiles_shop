@@ -57,10 +57,12 @@ function App() {
       })
     }
 
-    const mobiles = JSON.parse(localStorage.getItem('mobiles'))
-    const cart = JSON.parse(localStorage.getItem('cart'))
-    setMobiles(mobiles)
-    setCart(cart)
+
+    const parsedMobiles= JSON.parse(localStorage.getItem('mobiles'))
+
+    const parsedCart = JSON.parse(localStorage.getItem('cart'))
+    setMobiles(parsedMobiles)
+    setCart(parsedCart)
   }, [])
 
   useEffect(() => {
